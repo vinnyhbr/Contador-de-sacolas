@@ -13,7 +13,17 @@ function somar(){
     let cell5 = row.insertCell(4);
     let cell6 = row.insertCell(5);
     row.id = tableSize;
-    
+
+    cell1.innerHTML = ppQuant;
+
+    let btnCode = "<button class='remove-btn' onclick='removeToTable(this)'>Remover</button>";
+
+    document.getElementById('PP').value = "";
+    document.getElementById('P').value = "";
+    document.getElementById('M').value = "";
+    document.getElementById('G').value = "";
+
+    return false;
    }
    function subtrair(){
         
