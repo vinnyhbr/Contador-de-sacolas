@@ -5,69 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabela Moderna</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
+    <link rel="stylesheet" href="./coisas/style.css"/>
+    <script type="text/javascript" src="./coisas/script.js"></script>
 
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 20px;
-        }
-
-        th, td {
-            padding: 12px;
-            text-align: left;
-            border-bottom: 1px solid #ddd;
-        }
-
-        th {
-            background-color: #f2f2f2;
-        }
-
-        .button-container {
-            margin-bottom: 20px;
-        }
-
-        .button-container button {
-            background-color: #4caf50;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin-right: 10px;
-        }
-
-        input[type="number"] {
-            padding: 10px;
-            font-size: 16px;
-        }
-          
-        .textbox-container {
-            margin: 20px;
-            text-align: left;
-        }
-
-        .textbox {
-            width: 300px; 
-            height: 30px; 
-            padding: 5px; 
-            font-size: 16px; 
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-     
-        .textbox:focus {
-            border-color: #007bff; 
-            outline: none; 
-        }
-
-    </style>
 </head>
 
 <body>
@@ -116,6 +56,16 @@
         let pQuant = document.getElementById('P').value;
         let mQuant = document.getElementById('M').value;
         let gQuant = document.getElementById('G').value;
+
+        let tableSize = table.rows.length;
+    let row = table.insertRow(tableSize); 
+    let cell1 = row.insertCell(0); 
+    let cell2 = row.insertCell(1);
+    let cell3 = row.insertCell(2);
+    let cell4 = row.insertCell(3);
+    let cell5 = row.insertCell(4);
+    let cell6 = row.insertCell(5);
+    row.id = tableSize;
         
        }
        function subtrair(){
